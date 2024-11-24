@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRA MATEMATYCZNA</title>
+    <link rel="icon" href="image/logo_strona.png" width="100%" />
+    <link rel="stylesheet" href="styles/styleNewDesign.css" />
+  </head>
+  <body>
+    <div class="wholeWeb">
+      <div class="logoMatematyczne">
+        <img src="image/logo_strona.png" alt="logo" class="logo" />
+        <h1>GRA MATEMATYCZNA</h1>
+      </div>
+      <div class="container">
+        <div class="left">
+          <div class="inputs">
+            <p>
+              <label for="webNumber">Wybrana liczba</label>
+              <input
+                type="text"
+                name="webNumber"
+                id="webNumber"
+                placeholder="?"
+                maxlength="0"
+              />
+            </p>
+            <p id="operate"></p>
+            <p>
+              <label for="userNumber">Wpisana liczba</label>
+              <input
+                type="text"
+                name="userNumber"
+                id="userNumber"
+                placeholder="?"
+              />
+            </p>
+            <p>=</p>
+            <p>
+              <label for="result">Wynik </label>
+              <input type="text" name="result" id="result" disabled />
+            </p>
+          </div>
+
+          <div class="button">
+            <p>
+              <button class="submit" onclick="checkTheResult()">Sprawdź</button>
+            </p>
+            <p>
+              <button class="reset" onclick="reset()">Reset</button>
+            </p>
+          </div>
+
+          <p id="webText"><span style="opacity: 0">.</span></p>
+
+          <div class="randomNumber">
+            <div class="draw_random_number">
+              <h1>LICZBY DO WYBRANIA</h1>
+
+              <button class="draw_number" onclick="drawClick()">
+                WYLOSUJ JESZCZE RAZ LICZBY
+              </button>
+            </div>
+            <div>
+              <button class="number"></button><button class="number"></button
+              ><button class="number"></button><button class="number"></button
+              ><button class="number"></button><button class="number"></button
+              ><button class="number"></button>
+            </div>
+            <div>
+              <button class="number"></button><button class="number"></button
+              ><button class="number"></button><button class="number"></button
+              ><button class="number"></button><button class="number"></button
+              ><button class="number"></button>
+            </div>
+            <div>
+              <button class="number"></button><button class="number"></button
+              ><button class="number"></button><button class="number"></button
+              ><button class="number"></button><button class="number"></button
+              ><button class="number"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="rules">
+            <div class="naglowek">
+              <img src="image/ikonka.png" alt="żarówka" />
+              <h1>ZASADY GRY</h1>
+            </div>
+            <div class="rule_text">
+              <p>Zobacz jaki został wylosowany wynik</p>
+              <p>Wybierz jedno z podanych liczb</p>
+              <p>Zobacz jaki został wylosowany operator</p>
+              <p>W drugim polu wpisz liczbę aby wyszedł wynik</p>
+              <p>Następnie wciśnij przyciśk <b> Sprawdź</b></p>
+              <p>Gdy się pomyliłeś wciśnij <b> RESET</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wholeWeb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(18, 18, 18, 1);
+  height: 100vh;
+  width: 100vw;
+  padding: 5%;
+}
+
+.logoMatematyczne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  height: 15%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 90%;
+  box-shadow: 0 0 23px rgba(207, 201, 35, 0.1);
+  margin-bottom: 5%;
+}
+
+.logo {
+  height: 50%;
+  margin-right: 1%;
+}
+
+.container {
+  width: 60%;
+  display: flex;
+}
+
+.left {
+  width: 75%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 0.272);
+  margin-bottom: 2%;
+}
+
+.inputs p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+.inputs label {
+  margin-bottom: 3%;
+}
+
+.inputs p:nth-child(2n) {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: end;
+  align-items: center;
+  font-size: 190%;
+  color: white;
+  margin-bottom: 2.5%;
+  margin-right: 2.5%;
+}
+
+#webNumber::placeholder {
+  color: rgba(207, 201, 35, 1);
+}
+
+.inputs input {
+  width: 90%;
+  padding: 5%;
+  font-size: 120%;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.272);
+  text-align: center;
+  color: white;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+
+  width: 60%;
+}
+
+.button p {
+  margin-right: 8%;
+}
+
+.submit,
+.reset {
+  background-color: rgba(207, 201, 35, 1);
+  width: 120%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, 0.886);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.116);
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.reset {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+  color: rgb(255, 255, 255);
+}
+
+#webText {
+  margin-top: 3%;
+  font-size: 90%;
+  margin-bottom: 5%;
+}
+
+.reset:hover,
+.submit:hover {
+  background-color: rgba(207, 201, 35, 1);
+  transform: scale(1);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.886);
+  transition: all ease 0.5s;
+}
+
+.submit:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.randomNumber {
+  width: 100%;
+}
+
+.randomNumber h1 {
+  font-size: 100%;
+  color: white;
+}
+
+.rules {
+  border-radius: 8px;
+  background-color: rgba(41, 173, 255, 0.1);
+  padding: 18px;
+}
+
+.rule_text p {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 8%;
+  margin-top: 8%;
+  color: white;
+  height: 47px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.naglowek h1 {
+  padding-left: 2%;
+  font-size: 18.5px;
+  color: rgba(41, 173, 255, 1);
+}
+
+.naglowek {
+  display: flex;
+  justify-content: center;
+}
+
+.number {
+  width: 68px;
+  height: 68px;
+  margin: 13px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.number:hover {
+  background-color: rgba(207, 201, 35, 1);
+  transform: scale(1);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.886);
+  transition: all ease 0.5s;
+}
+
+.draw_random_number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+}
+
+.draw_number {
+  background-color: rgba(0, 0, 0, 0.103);
+  margin-left: 20px;
+  padding: 15px 15px;
+  font-size: 12px;
+  border-radius: 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 0;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  color: white;
+}
+
+.draw_number:hover {
+  background-color: rgba(41, 173, 255, 0.1);
+  transform: scale(1);
+  transition: all ease 0.5s;
+}
